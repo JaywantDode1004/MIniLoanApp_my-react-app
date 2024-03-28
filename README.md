@@ -37,6 +37,17 @@ If all repayments for a loan are marked as PAID, the loan's overall status updat
 #Thankyou for repayment
 ![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/328c344a-a7ec-4d0b-b134-9d389b982f62)
 
+#Admin Login
+Admin Email:- admin@example.com
+Admin Password:- admin123
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/86413ffc-d663-433f-8d7b-a74fb651affc)
+
+#Admin has authority for approve the loan
+pending are in red buttons after admin approve this button goes green from red. and if customer paid their all repayments button goes disappear.
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/11aef757-20b3-4d79-a24b-9671adf8c8f6)
+
+
+
 
 
 
