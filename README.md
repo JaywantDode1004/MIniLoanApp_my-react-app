@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+#Mini Loan Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+1. Loan Creation by Customers
+Customers can initiate a loan request through the system by specifying the loan amount and term. Upon creating a loan request, the system automatically generates a schedule for repayments.
 
-## Available Scripts
+Example: A customer requests a loan of $10,000 with a 3-month term on 7th February 2022. The system generates three scheduled repayments:
+14th February 2023: $3,333.33
+21st February 2023: $3,333.33
+28th February 2023: $3,333.34
+At this stage, both the loan and its scheduled repayments are marked as PENDING.
+2. Loan Approval by Admins
+Loan administrators have the capability to review PENDING loans and approve them. Once approved, the loan status transitions to APPROVED, signaling that the borrower can start making repayments.
 
-In the project directory, you can run:
+3. Viewing Loans by Customers
+Customers have the ability to view details of the loans tied to them. A security policy ensures that customers can only access their own loan information, thereby protecting user data and ensuring privacy.
 
-### `npm start`
+4. Repayments by Customers
+Borrowers can submit repayments for their loans through the system. A repayment must be equal to or greater than the scheduled repayment amount to be accepted. Upon submission:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The corresponding scheduled repayment status changes to PAID.
+If all repayments for a loan are marked as PAID, the loan's overall status updates to PAID, indicating the loan has been fully settled.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Home Page
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/f70e64d4-f5f1-44ef-8358-79c80bdc2ddf)
 
-### `npm test`
+# Customer Creating Loan
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/fa0aaaf3-ae54-41f8-8214-37876bfaf43e)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Customer can check their loan status 
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/8611c23d-9074-4e83-a7ee-e89b34a24a3c)
 
-### `npm run build`
+# Customer can repay their loan by their loanid
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/5044e482-bc0f-4513-bca1-431d7b604b1c)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#Thankyou for repayment
+![image](https://github.com/JaywantDode1004/MIniLoanApp_my-react-app/assets/136264417/328c344a-a7ec-4d0b-b134-9d389b982f62)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
